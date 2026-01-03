@@ -8,115 +8,114 @@
 
 @layer base {
   :root {
-    /* Warm cream background */
-    --background: 35 40% 97%;
-    --foreground: 350 25% 25%;
+    /* Clean white background */
+    --background: 210 40% 98%;
+    --foreground: 210 40% 15%;
 
-    /* Soft rose cards */
-    --card: 350 50% 98%;
-    --card-foreground: 350 25% 25%;
+    /* White cards */
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 15%;
 
-    --popover: 350 50% 98%;
-    --popover-foreground: 350 25% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 15%;
 
-    /* Blush pink primary */
-    --primary: 350 75% 70%;
+    /* Medical teal/cyan primary */
+    --primary: 190 85% 45%;
     --primary-foreground: 0 0% 100%;
 
-    /* Soft lavender secondary */
-    --secondary: 280 50% 92%;
-    --secondary-foreground: 280 40% 35%;
+    /* Light blue secondary */
+    --secondary: 200 60% 94%;
+    --secondary-foreground: 200 60% 30%;
 
-    /* Muted rose */
-    --muted: 350 30% 94%;
-    --muted-foreground: 350 20% 50%;
+    /* Soft gray muted */
+    --muted: 210 30% 96%;
+    --muted-foreground: 210 20% 45%;
 
-    /* Peach accent */
-    --accent: 25 85% 80%;
-    --accent-foreground: 25 60% 30%;
+    /* Light cyan accent */
+    --accent: 185 70% 92%;
+    --accent-foreground: 185 60% 25%;
 
-    /* Soft coral destructive */
-    --destructive: 0 65% 65%;
+    /* Soft red destructive */
+    --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 350 30% 90%;
-    --input: 350 30% 92%;
-    --ring: 350 75% 70%;
+    --border: 210 30% 90%;
+    --input: 210 30% 92%;
+    --ring: 190 85% 45%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
-    /* Custom MATRI colors */
-    --rose: 350 75% 70%;
-    --rose-light: 350 80% 92%;
-    --rose-dark: 350 60% 55%;
-    --lavender: 280 50% 85%;
-    --lavender-light: 280 60% 95%;
-    --peach: 25 85% 80%;
-    --peach-light: 25 90% 92%;
-    --coral: 15 80% 70%;
-    --gold: 45 70% 65%;
-    --gold-light: 45 80% 90%;
-    --cream: 35 40% 97%;
-    --cream-dark: 35 30% 92%;
+    /* Custom MATRI colors - Medical theme */
+    --teal: 190 85% 45%;
+    --teal-light: 190 80% 92%;
+    --teal-dark: 190 75% 35%;
+    --navy: 210 60% 20%;
+    --navy-light: 210 50% 95%;
+    --sky: 200 80% 85%;
+    --sky-light: 200 90% 95%;
+    --mint: 165 60% 85%;
+    --mint-light: 165 70% 95%;
+    --coral: 15 80% 60%;
+    --coral-light: 15 90% 92%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(350 75% 70%), hsl(280 50% 80%));
-    --gradient-warm: linear-gradient(135deg, hsl(25 85% 80%), hsl(350 75% 75%));
-    --gradient-soft: linear-gradient(180deg, hsl(350 50% 98%), hsl(35 40% 97%));
-    --gradient-lavender: linear-gradient(135deg, hsl(280 50% 85%), hsl(350 60% 85%));
+    --gradient-primary: linear-gradient(135deg, hsl(190 85% 45%), hsl(200 70% 55%));
+    --gradient-warm: linear-gradient(135deg, hsl(185 70% 50%), hsl(190 85% 45%));
+    --gradient-soft: linear-gradient(180deg, hsl(200 60% 98%), hsl(210 40% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 50% 97%), hsl(190 40% 95%));
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(350 30% 70% / 0.2);
-    --shadow-card: 0 8px 30px -8px hsl(350 30% 60% / 0.15);
-    --shadow-glow: 0 0 40px hsl(350 75% 70% / 0.2);
+    --shadow-soft: 0 4px 20px -4px hsl(210 30% 50% / 0.15);
+    --shadow-card: 0 8px 30px -8px hsl(210 30% 40% / 0.12);
+    --shadow-glow: 0 0 40px hsl(190 85% 45% / 0.15);
 
-    --sidebar-background: 350 50% 98%;
-    --sidebar-foreground: 350 25% 30%;
-    --sidebar-primary: 350 75% 70%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 40% 20%;
+    --sidebar-primary: 190 85% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 280 50% 92%;
-    --sidebar-accent-foreground: 280 40% 35%;
-    --sidebar-border: 350 30% 90%;
-    --sidebar-ring: 350 75% 70%;
+    --sidebar-accent: 200 60% 94%;
+    --sidebar-accent-foreground: 200 60% 30%;
+    --sidebar-border: 210 30% 90%;
+    --sidebar-ring: 190 85% 45%;
   }
 
   .dark {
-    --background: 350 20% 8%;
-    --foreground: 350 20% 95%;
+    --background: 210 30% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 350 20% 12%;
-    --card-foreground: 350 20% 95%;
+    --card: 210 25% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 350 20% 12%;
-    --popover-foreground: 350 20% 95%;
+    --popover: 210 25% 12%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 350 70% 65%;
-    --primary-foreground: 350 20% 10%;
+    --primary: 190 75% 50%;
+    --primary-foreground: 210 30% 8%;
 
-    --secondary: 280 40% 25%;
-    --secondary-foreground: 280 50% 90%;
+    --secondary: 200 40% 20%;
+    --secondary-foreground: 200 50% 90%;
 
-    --muted: 350 20% 18%;
-    --muted-foreground: 350 20% 65%;
+    --muted: 210 20% 18%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 25 70% 30%;
-    --accent-foreground: 25 85% 90%;
+    --accent: 185 50% 20%;
+    --accent-foreground: 185 70% 90%;
 
     --destructive: 0 60% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 350 20% 20%;
-    --input: 350 20% 20%;
-    --ring: 350 70% 65%;
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 190 75% 50%;
 
-    --sidebar-background: 350 20% 10%;
-    --sidebar-foreground: 350 20% 90%;
-    --sidebar-primary: 350 70% 65%;
+    --sidebar-background: 210 25% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 190 75% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 280 40% 25%;
-    --sidebar-accent-foreground: 280 50% 90%;
-    --sidebar-border: 350 20% 20%;
-    --sidebar-ring: 350 70% 65%;
+    --sidebar-accent: 200 40% 20%;
+    --sidebar-accent-foreground: 200 50% 90%;
+    --sidebar-border: 210 20% 20%;
+    --sidebar-ring: 190 75% 50%;
   }
 }
 
@@ -144,8 +143,8 @@
     background: var(--gradient-soft);
   }
   
-  .gradient-lavender {
-    background: var(--gradient-lavender);
+  .gradient-hero {
+    background: var(--gradient-hero);
   }
   
   .shadow-soft {
@@ -165,5 +164,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .wave-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2314b8a6' fill-opacity='0.05' d='M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,138.7C672,139,768,181,864,186.7C960,192,1056,160,1152,138.7C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
   }
 }
