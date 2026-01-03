@@ -81,8 +81,8 @@ export const Layout = ({ children }: LayoutProps) => {
                   onClick={() => navigate(item.path)}
                   className={`flex flex-col items-center gap-1 px-4 py-2 rounded-xl transition-all ${
                     isActive 
-                      ? 'text-primary bg-rose-light' 
-                      : 'text-muted-foreground hover:text-primary hover:bg-rose-light/50'
+                      ? 'text-primary bg-primary/10' 
+                      : 'text-muted-foreground hover:text-primary hover:bg-primary/5'
                   }`}
                   whileTap={{ scale: 0.95 }}
                 >
